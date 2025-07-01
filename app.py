@@ -6,7 +6,7 @@ import torch
 app = FastAPI()
 
 # ✅ 사용자 모델 설정
-model_name = "kimseongsan/polite_corrector_ko_last"
+model_name = "kimseongsan/finetuned-et5-politeness"
 tokenizer = T5Tokenizer.from_pretrained(model_name)
 model = T5ForConditionalGeneration.from_pretrained(model_name)
 
